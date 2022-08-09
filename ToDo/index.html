@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My ToDo App</title>
     <link rel="stylesheet" href="styles/styles.css">
-    <script src=""></script>
 </head>
 <body>
     <header id="header">
@@ -16,7 +15,7 @@
                 <h2>Always Remember What You Need TO DO</h2>
             </div>
             <section id="addnew">
-                <form action="#">
+                <form action="#" id="myform">
                     <input type="text" placeholder="ToDo ..." class="todo">
                 </form>
             </section>
@@ -26,15 +25,12 @@
     <div class="container">
         <section id="taskslist">
             <ul>
-                <li>task 1</li>
-                <li>task 2</li>
-                <li>task 3</li>
-                <li>task 4</li>
             </ul>
         </section>
         <span id="total">
-            total: 0
+            total tasks: 0
         </span>
     </div>
+    <script src="scripts/scripts.js"></script>
 </body>
 </html>
