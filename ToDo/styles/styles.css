@@ -1,8 +1,11 @@
+/* general styles */
 body{
     background-color: #3a3a3a;
     padding: 0;
     margin: 0;
+    font-family: 'arial';
 }
+
 body, h1, h2{
     padding: 0;
     margin: 0;
@@ -13,9 +16,40 @@ body, h1, h2{
     margin: 0 auto;
 }
 
+input:focus{
+    outline: none;
+}
+
 /* header */
 #header{
     height: 300px;
     background-image: url(../assets/bg.jpg);
     background-position-y: center;
+    color: #fff;
+    box-shadow: 0px 3px 10px -4px #000000;
+    padding: 20px;
+}
+
+#header .titles h1{
+    margin-top: 20px;
+}
+
+#header .titles h2{
+    font-weight: normal;
+    font-size: 20px;
+    margin-top: 5px;
+
+}
+
+/* input add new*/
+#addnew .todo{
+    padding: 10px;
+    width: 100%;
+    margin-top: 15px;
+    border: none;
+    font-size: 23px;
+    opacity: 0.8;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px -8px #000000;
+    box-sizing: border-box;
 }
