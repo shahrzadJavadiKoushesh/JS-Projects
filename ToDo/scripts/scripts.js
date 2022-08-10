@@ -8,6 +8,7 @@ myform.addEventListener('submit', function(){
         listitem.innerHTML = todotext.value;
         let taskslist = document.querySelector('#taskslist ul');
         taskslist.appendChild(listitem);
+        todotext.value = '';
     }else{
         alert('You have to type something!');
     }
