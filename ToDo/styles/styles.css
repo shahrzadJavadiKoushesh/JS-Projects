@@ -67,11 +67,24 @@ input:focus{
 #taskslist ul{
     padding: 0;
     list-style: none;
+    position: relative;
 }
 
 #taskslist ul li{
     padding: 15px;
     border-bottom: 1px solid #e4e4e4;
+    position: relative;
+}
+
+#myUl li img{
+    position: absolute;
+    width: 20px;
+    top: 13px;
+    right: 15px;
+}
+
+#myUl li img:hover{
+    cursor: pointer;
 }
 
 #taskslist ul li:last-child{
