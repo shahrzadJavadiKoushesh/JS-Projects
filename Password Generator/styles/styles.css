@@ -92,3 +92,8 @@ h3{
     border: none;
     margin-bottom: 10px;    
 }
+
+.generate:hover{
+    cursor: pointer;
+    box-shadow: -1px 1px 12px 5px rgba(7,1,75,0.88);
+}
