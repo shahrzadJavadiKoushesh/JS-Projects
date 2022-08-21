@@ -14,3 +14,23 @@ body{
     padding: 10px;
     margin: 0;
 }
+
+h2{
+    margin: 10px 0 20px;
+    text-align: center;
+}
+
+/* CONTAINER STYLES */
+#container{
+    background-color: #0c5791;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 35px;
+    padding: 10px;
+    height: 50px;
+    width: 100%;
+    font-size: 18px;
+    letter-spacing: 1px;
+    position: relative;
+}
