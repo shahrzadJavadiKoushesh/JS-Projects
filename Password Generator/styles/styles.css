@@ -33,6 +33,7 @@ h3{
     border-radius: 20px;
 }   
 
+/* RESULT CONTAINER */
 .resultbox{
     background-color: rgba(0, 0, 0, 0.5);
     display: flex;
@@ -58,6 +59,7 @@ h3{
     width: 1rem;
 }
 
+/* COPY BUTTON */
 .resultbox .copy-btn{
     position: absolute;
     border-radius: 20px;
@@ -68,11 +70,24 @@ h3{
     left: 5px;
 }
 
+/* PASSWORD OPTIONS */
 .setting{
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 15px 0;
-  font-size: 18px;
+    font-size: 18px;
+}
 
+/* GENERATE BUTTON */
+.generate{
+    background-color: #7ecbe0;
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 18px;
+    color: black;
+    border: none;
+    margin-bottom: 10px;    
 }
