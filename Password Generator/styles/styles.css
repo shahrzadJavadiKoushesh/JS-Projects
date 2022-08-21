@@ -13,6 +13,8 @@ body{
     overflow: hidden;
     padding: 10px;
     margin: 0;
+    color: #fff;
+    display: flex;
 }
 
 h2{
@@ -23,14 +25,21 @@ h2{
 /* CONTAINER STYLES */
 #container{
     background-color: #0c5791;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    border-radius: 35px;
-    padding: 10px;
-    height: 50px;
-    width: 100%;
-    font-size: 18px;
-    letter-spacing: 1px;
-    position: relative;
+    box-shadow: 0px 2px 10px rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    width: 350px;
+    max-width: 100%;
+    border-radius: 20px;
+}   
+
+.resultbox #result{
+    word-wrap: break-word;
+  max-width: calc(100% - 40px);
+  overflow-y: scroll;
+  height: 100%;
 }
+
+#result::-webkit-scrollbar {
+    width: 1rem;
+}
+
