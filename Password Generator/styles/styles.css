@@ -58,3 +58,12 @@ h3{
     width: 1rem;
 }
 
+.resultbox .copy-btn{
+    position: absolute;
+    border-radius: 20px;
+    font-size: 20px;
+    height: 40px;
+    width: 35px;
+    top: 5px;
+    left: 5px;
+}
