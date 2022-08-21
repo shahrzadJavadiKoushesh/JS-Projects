@@ -77,6 +77,7 @@ h3{
     align-items: center;
     margin: 15px 0;
     font-size: 18px;
+    border-bottom:2px solid #131334 ;
 }
 
 /* GENERATE BUTTON */
