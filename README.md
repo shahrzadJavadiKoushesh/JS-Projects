@@ -11,3 +11,6 @@ ToDo -> a simple todo app in which tasks could be added and deleted
 
 Password Generator -> a simple password generator which you can generate passwords with any option you need
 
+![image](https://user-images.githubusercontent.com/77495573/185924577-4a65a9d2-888a-469c-bb87-edaf65aa083b.png)
+
+
