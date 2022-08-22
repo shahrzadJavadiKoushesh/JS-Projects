@@ -86,7 +86,7 @@ h3{
 }
 
 /* GENERATE BUTTON */
-.generate{
+#generate{
     background-color: #7ecbe0;
     display: block;
     width: 100%;
@@ -98,7 +98,7 @@ h3{
     margin-bottom: 10px;    
 }
 
-.generate:hover{
+#generate:hover{
     cursor: pointer;
     box-shadow: -1px 1px 12px 5px rgba(7,1,75,0.88);
 }
