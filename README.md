@@ -5,7 +5,7 @@ ToDo -> a simple todo app in which tasks could be added and deleted
 
 ![image](https://user-images.githubusercontent.com/77495573/186470062-8937e44e-69e6-4304-aca7-50c42dae2d68.png)
 
-![image](https://user-images.githubusercontent.com/77495573/185687240-b158af30-9949-4910-9fd8-713569201627.png)
+![image](https://user-images.githubusercontent.com/77495573/186470305-52376336-9f59-4bf2-8f2f-74e2a207fa2f.png)
 
 ---------------------------------------------------------------------------------------------------------------
 
