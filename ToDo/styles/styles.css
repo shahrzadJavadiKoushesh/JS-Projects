@@ -118,6 +118,10 @@ input:focus{
     border-bottom: none;
 }
 
+#donetaskslist ul li:last-child{
+    border-bottom: none;
+}
+
 #total{
     color: #c4c4c4;
     position: relative;
