@@ -30,8 +30,8 @@ myform.addEventListener('submit', function(){
         listitem.appendChild(doneList);
         doneList.setAttribute('class', 'checkimg')
         doneList.setAttribute('src', 'assets/icons8-done-48.png');
-        doneList.setAttribute('title', 'delete');
-        doneList.setAttribute('alt', 'trash');
+        doneList.setAttribute('title', 'done');
+        doneList.setAttribute('alt', 'check');
 
         doneList.addEventListener('click', function(){
             // alert('fuck');
