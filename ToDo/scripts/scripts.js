@@ -35,6 +35,8 @@ myform.addEventListener('submit', function(){
 
         doneList.addEventListener('click', function(){
             taskslist.removeChild(listitem);
+            let donetaskslist = document.querySelector('#donetaskslist ul');
+            donetaskslist.appendChild(listitem);
             numberOfTasks--;
             document.querySelector('#totaltasks').innerHTML = numberOfTasks;
             numberOfDoneTasks++;
