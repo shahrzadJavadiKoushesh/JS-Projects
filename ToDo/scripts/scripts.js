@@ -3,7 +3,7 @@ let todotext = document.querySelector('.todo');
 let myform = document.querySelector('#myform');
 
 let numberOfTasks = 0;
-
+let numberOfDoneTasks = 0;
 myform.addEventListener('submit', function(){
     if(todotext.value != ''){
         let listitem = document.createElement('li');
@@ -34,7 +34,11 @@ myform.addEventListener('submit', function(){
         doneList.setAttribute('alt', 'check');
 
         doneList.addEventListener('click', function(){
-            // alert('fuck');
+            taskslist.removeChild(listitem);
+            numberOfTasks--;
+            document.querySelector('#totaltasks').innerHTML = numberOfTasks;
+            numberOfDoneTasks++;
+            document.querySelector('#donetasks').innerHTML = numberOfDoneTasks;
         })
     }else{
         alert('You have to type something!');
