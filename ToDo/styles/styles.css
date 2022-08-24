@@ -87,6 +87,13 @@ input:focus{
     cursor: pointer;
 }
 
+#myUl li .checkimg{
+    position: absolute;
+    width: 20px;
+    top: 13px;
+    right: 40px;
+}
+
 #taskslist ul li:last-child{
     border-bottom: none;
 }

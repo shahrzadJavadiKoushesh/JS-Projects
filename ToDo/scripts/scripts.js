@@ -4,8 +4,6 @@ let myform = document.querySelector('#myform');
 
 let numberOfTasks = 0;
 
-// let myul = document.querySelector('#myUl');
-
 myform.addEventListener('submit', function(){
     if(todotext.value != ''){
         let listitem = document.createElement('li');
@@ -27,6 +25,17 @@ myform.addEventListener('submit', function(){
             numberOfTasks--;
             document.querySelector('#totaltasks').innerHTML = numberOfTasks;
         });
+        // done 
+        let doneList = document.createElement('img');
+        listitem.appendChild(doneList);
+        doneList.setAttribute('class', 'checkimg')
+        doneList.setAttribute('src', 'assets/icons8-done-48.png');
+        doneList.setAttribute('title', 'delete');
+        doneList.setAttribute('alt', 'trash');
+
+        doneList.addEventListener('click', function(){
+            // alert('fuck');
+        })
     }else{
         alert('You have to type something!');
     }
