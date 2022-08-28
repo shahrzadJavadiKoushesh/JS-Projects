@@ -77,15 +77,37 @@ input{
     display: block;
     height: 50px;
     width: 100%;
-    background-color: rgba(255,255,255,0.07);
+    background-color: rgba(255, 255, 255, 0.523);
     border-radius: 3px;
     padding: 0 10px;
     margin-top: 8px;
     font-size: 14px;
     font-weight: 300;
+    position: relative;
+    color: #080710;
 }
+
+#password-container{
+    position: relative;
+}
+
+.pass-visibility{
+    width: 18px;
+    opacity: 0.6;
+    display: none;
+    position: absolute;
+    left: 300px;
+    bottom: 15px;
+    color: #4e524f;
+}
+
+.pass-visibility:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
 ::placeholder{
-    color: #e5e5e5;
+    color: #080710;
 }
 button{
     margin-top: 50px;
