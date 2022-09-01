@@ -15,7 +15,7 @@ Password Generator -> a simple password generator which you can generate passwor
 
 ---------------------------------------------------------------------------------------------------------------
 
-Login Page ->a simple login page with toggle password visibility 
+Login Page -> a simple login page with toggle password visibility 
 
 ![image](https://user-images.githubusercontent.com/77495573/187876300-478308de-504b-4685-ac23-2ee04f22f998.png)
 
