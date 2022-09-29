@@ -94,7 +94,7 @@ input{
 .pass-visibility{
     width: 18px;
     opacity: 0.6;
-    /* display: none; */
+    display: none;
     position: absolute;
     left: 300px;
     bottom: 15px;
