@@ -1,7 +1,10 @@
+/* GENERAL STYLES */
 body{
+    background-color: rgb(34, 158, 18);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
+/* SELECT BOX */
 #select-color form{
     background-color: rgba(59, 59, 59, 0.8);
     color: #fff;
@@ -16,6 +19,7 @@ body{
     width: 100%;
 }
 
+/* RANDOM BOTTOM */
 .btn{
     text-align: center;
 }
