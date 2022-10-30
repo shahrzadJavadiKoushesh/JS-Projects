@@ -27,6 +27,10 @@ bRange.addEventListener('input', function() {
 
 
 randombtn.addEventListener('click', function(){
-let rangesValues = 'RGB is: ' + rRange.value + ", " + gRange.value + ", " + bRange.value;
-    alert(rangesValues);
+let randomNumRed = Math.floor(Math.random() * 255);
+let randomNumGreen = Math.floor(Math.random() * 255);
+let randomNumBlue = Math.floor(Math.random() * 255);
+bodyTag.style.backgroundColor = "rgb("+ randomNumRed +", "+ randomNumGreen +", "+randomNumBlue+")";
+
+    
 });
