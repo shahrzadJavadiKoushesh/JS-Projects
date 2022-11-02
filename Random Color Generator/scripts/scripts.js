@@ -23,7 +23,7 @@ rRange.value = randomNumRed;
 gRange.value = randomNumGreen;
 bRange.value = randomNumBlue;
 const textarea = document.createElement("textarea");
-textarea.value = "RGB code is: " + randomNumRed + ', ' + randomNumGreen + ', ' + randomNumBlue + ' and is copied to your clipboard.';
+textarea.value = "RGB code is: " + randomNumRed + ', ' + randomNumGreen + ', ' + randomNumBlue;
 document.body.appendChild(textarea);
     textarea.select();
     document.execCommand('copy');
