@@ -8,11 +8,17 @@ function change_color (){
     bodyTag.style.backgroundColor = "rgb("+ rRange.value +", "+ gRange.value +", "+bRange.value+")";
 }
 
-rRange.addEventListener('input', change_color());
+rRange.addEventListener('input',function(){
+    change_color()}
+);
 
-gRange.addEventListener('input', change_color());
+gRange.addEventListener('input', function(){
+change_color()}
+);
 
-bRange.addEventListener('input', change_color());
+bRange.addEventListener('input', function(){ 
+    change_color()}
+);
 
 randombtn.addEventListener('click', function(){
 let randomNumRed = Math.floor(Math.random() * 255);
