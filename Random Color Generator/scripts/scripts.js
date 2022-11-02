@@ -6,6 +6,9 @@ let bodyTag = document.querySelector('body');
 
 function change_color (){
     bodyTag.style.backgroundColor = "rgb("+ rRange.value +", "+ gRange.value +", "+bRange.value+")";
+    document.querySelector('#red').innerHTML = rRange.value;
+    document.querySelector('#green').innerHTML = gRange.value;
+    document.querySelector('#blue').innerHTML = bRange.value;
 }
 
 rRange.addEventListener('input',function(){
@@ -29,10 +32,12 @@ rRange.value = randomNumRed;
 gRange.value = randomNumGreen;
 bRange.value = randomNumBlue;
 const textarea = document.createElement("textarea");
-textarea.value = "RGB code is: " + randomNumRed + ', ' + randomNumGreen + ', ' + randomNumBlue;
+textarea.value =randomNumRed + ', ' + randomNumGreen + ', ' + randomNumBlue;
 document.body.appendChild(textarea);
     textarea.select();
     document.execCommand('copy');
     textarea.remove();
-    alert(textarea.value);
+    document.querySelector('#red').innerHTML = randomNumRed;
+    document.querySelector('#green').innerHTML = randomNumGreen;
+    document.querySelector('#red').innerHTML = randomNumBlue;
 });
