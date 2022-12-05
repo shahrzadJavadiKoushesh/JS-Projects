@@ -1,0 +1,212 @@
+@import url(reset.css);
+
+@font-face {
+    font-family: vazirNormal;
+    src: url('../fonts/vazir.eot');
+    src: url('../fonts/vazir.eot?#iefix') format('embedded-opentype'), url('../fonts/vazir.woff2') format('woff2'), url('../fonts/vazir.woff') format('woff'), url('../fonts/vazir.ttf') format('truetype');
+    font-weight: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: vazirBold;
+    src: url('../fonts/vazir-bold.eot');
+    src: url('../fonts/vazir-bold.eot?#iefix') format('embedded-opentype'), url('../fonts/vazir-bold.woff2') format('woff2'), url('../fonts/vazir-bold.woff') format('woff'), url('../fonts/vazir-bold.ttf') format('truetype');
+    font-weight: normal;
+    font-display: swap;
+}
+
+body {
+    font-family: vazirNormal;
+    direction: rtl;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+#header {
+    background-color: rgba(253, 214, 102, 1);
+    height: 600px;
+}
+
+
+#header #header-section {
+    display: flex;
+}
+
+
+#header .text {
+    align-self: center;
+}
+
+#header .image img {
+    width: 450px;
+    position: relative;
+    top: 20px;
+}
+
+#header .title {
+    font-family: vazirBold;
+    font-size: 30px;
+    line-height: 40px;
+}
+
+#header p.text {
+    color: #3b3b3b;
+    padding: 15px 0 15px 15px;
+    line-height: 23px;
+    text-align: justify;
+}
+
+#header .btn {
+    background-color: rgba(255, 114, 39, 1);
+    color: #fff;
+    border: none;
+    font-family: vazirNormal;
+    font-size: 20px;
+    padding: 5px 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+#header .btn:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+/* Products */
+
+#products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#products .product-item {
+    flex-basis: 280px;
+    border: 1px solid #e0e0e0;
+    margin-top: 25px;
+    border-radius: 5px;
+}
+
+#products .product-item .product-image img {
+    width: 100%;
+    height: 200px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#products .product-item .product-title {
+    font-family: vazirBold;
+    padding: 10px;
+    height: 50px;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+#products .product-item .product-instock {
+    color: red;
+    font-size: 13px;
+    padding: 0 10px 10px 0;
+}
+
+#products .product-item .product-data {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 10px;
+    font-size: 15px;
+    border-top: 1px solid #e0e0e0;
+}
+
+#products .product-item .product-data .add-to-cart svg:hover {
+    cursor: pointer;
+}
+
+/* Cart */
+.cart {
+    background-color: #d8d8d8;
+    width: 320px;
+    height: 400px;
+    position: fixed;
+    left: 20px;
+    bottom: -365px;
+    border-radius: 5px;
+}
+
+.cart .cart-header{
+    background-color: #388e3c;
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    padding: 10px 0;
+    border-radius: 5px 5px 0 0 ;
+}
+
+.cart .cart-header:hover{
+    cursor: pointer;
+}
+
+.cart .cart-items {
+    height: 300px;
+    overflow-x: auto;
+}
+
+.cart .cart-item .p-name:hover {
+    cursor: pointer;
+    background-color: #fa6060;
+}
+
+.cart .cart-item .plus {
+    background-color: green;
+    color: #fff;
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    text-align: center;
+}
+
+.cart .cart-item .minus {
+    background-color: red;
+    color: #fff;
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    text-align: center;
+}
+
+.cart .cart-item .p-unit svg {
+    font-size: 11px;
+}
+
+.cart .cart-item .p-unit svg:hover {
+    cursor: pointer;
+}
+
+.cart .cart-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    font-size: 14px;
+}
+
+
+.cart .total {
+    padding-top: 20px;
+    text-align: center;
+    font-size: 16px;
+}
+
+/* Footer */
+#footer {
+    background-color: #3b3b3b;
+    color:#fff;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 30px;
+}
+
+
