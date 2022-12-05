@@ -20,9 +20,10 @@ Login Page -> a simple login page with toggle password visibility
 ![image](https://user-images.githubusercontent.com/77495573/187876300-478308de-504b-4685-ac23-2ee04f22f998.png)
 
 ---------------------------------------------------------------------------------------------------------------
-Random Color Generator -> creates random rgb background colors
+Random Color Generator -> creates random rgb background colors and the rgb code is copied to clipboard 
 
-![image](https://user-images.githubusercontent.com/77495573/199412559-2dc27ff7-4c1c-4ed9-94c8-492fca3d234b.png)
+![image](https://user-images.githubusercontent.com/77495573/200270930-c3b471df-c575-4dc6-8c6f-98bcef52682b.png)
+
 
 
 
