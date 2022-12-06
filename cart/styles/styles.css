@@ -24,7 +24,7 @@ body{
 /* HEADER */
 #header{
     height: 600px;
-    background-color: rgb(126, 187, 220);
+    background-color: rgba(253, 214, 102, 1);;
 }
 
 #header #header-section{
@@ -53,6 +53,23 @@ body{
     line-height: 20px;
     text-align: justify;
 }
+
+#header #header-section .right-text .btn {
+    background-color: rgb(255, 114, 39, 1);
+    color: #fff;
+    border: none;
+    font-family: vazirNormal;
+    font-size: 20px;
+    padding: 5px 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+#header #header-section .right-text .btn:hover{
+    opacity: 0.9;
+    cursor: pointer;
+}
+
 
 /* CONTAINER */
 .container{
