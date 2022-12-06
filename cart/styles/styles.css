@@ -24,7 +24,34 @@ body{
 /* HEADER */
 #header{
     height: 600px;
-    background-color: rgba(253, 214, 102, 1);
+    background-color: rgb(126, 187, 220);
+}
+
+#header #header-section{
+    display: flex;
+}
+
+#header #header-section .right-text{
+    align-self: center;
+}
+
+#header #header-section .image img{
+    width: 450px;
+    position: relative;
+    top: 20px;
+}
+
+#header #header-section h2{
+    font-family: vazirBold;
+    font-size: 30px;
+    line-height: 40px;
+}
+
+#header #header-section p{
+    color: #3b3b3b;
+    padding: 15px 0 15px 15px;
+    line-height: 20px;
+    text-align: justify;
 }
 
 /* CONTAINER */
