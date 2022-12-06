@@ -20,3 +20,16 @@ body{
     font-family: vazirNormal;
     direction: rtl;
 }
+
+/* HEADER */
+#header{
+    height: 600px;
+    background-color: rgba(253, 214, 102, 1);
+}
+
+/* CONTAINER */
+.container{
+    width: 1200px;
+    margin: auto;
+}
+    
