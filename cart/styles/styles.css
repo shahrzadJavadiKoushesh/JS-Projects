@@ -105,3 +105,21 @@ body{
     line-height: 20px;
     font-size: 15px;
 }
+
+#products .product-item .product-instock{
+    padding: 0 10px 10px 0;
+    font-size: 13px;
+}
+
+#products .product-item .product-data{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 10px;
+    border-top: 1px solid #e0e0e0;
+    font-size: 15px;
+}
+
+#products .product-item .product-data .product-addToCart svg :hover{
+    cursor: pointer;
+}
