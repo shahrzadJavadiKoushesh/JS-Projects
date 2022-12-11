@@ -149,6 +149,49 @@ body{
     overflow-x: auto;
 }
 
+#cart #cart-item{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    font-size: 14px;
+}
+
+#cart #cart-item .plus{
+    background-color: green;
+    color: #fff;
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 3px;
+}
+
+#cart #cart-item .minus{
+    background-color: red;
+    color: #fff;
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 3px;
+}
+
+#cart #cart-item #p-unit svg{
+    font-size: 11px;
+}
+
+#cart #cart-item #p-unit svg:hover{
+    cursor: pointer;
+}
+#cart #cart-item #p-name{
+    height: 25px;
+    border-radius: 3px;
+}
+#cart #cart-item #p-name:hover{
+    cursor: pointer;
+    background-color: #fa6060;
+}
+
 #cart .total{
     padding-top: 20px;
     text-align: center;
