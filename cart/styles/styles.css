@@ -124,6 +124,38 @@ body{
     cursor: pointer;
 }
 
+/* CART */
+#cart{
+    background-color: #d8d8d8;
+    width: 320px;
+    height: 400px;
+    position: fixed;
+    left: 20px;
+    bottom: -10px;
+    border-radius: 8px;
+}
+
+#cart #cart-header{
+    background-color: #388e3c;
+    color: #e0e0e0;
+    text-align: center;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 8px 8px 0 0;
+}
+
+#cart #cart-items{
+    height: 300px;
+    overflow-x: auto;
+}
+
+#cart .total{
+    padding-top: 20px;
+    text-align: center;
+    font-size: 16px;
+}
+
+
 /* FOOTER */
 #footer{
     background-color: #3b3b3b;
