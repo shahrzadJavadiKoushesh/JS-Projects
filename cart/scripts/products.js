@@ -62,13 +62,4 @@ let products = [
         instock: 4,
         imgSrc: "images/8.jpg"
     },
-
-    {
-        id:8,
-        name: "کفش بوت چرم",
-        price: 197000,
-        instock: 4,
-        imgSrc: "images/1.jpg"
-    },
-
 ];
