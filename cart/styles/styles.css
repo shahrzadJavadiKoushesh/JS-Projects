@@ -73,7 +73,7 @@ body{
 
 /* CONTAINER */
 .container{
-    width: 1200px;
+    width: 830px;
     margin: auto;
 }
 
@@ -81,7 +81,7 @@ body{
 #products {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
   
 #products .product-item{

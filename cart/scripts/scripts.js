@@ -36,12 +36,20 @@ let cart = [];
 
 // ADD TO CART FUNCTION
 function add_to_cart(id){
-    let item = products.find(function(p){
-        return p.id == id;
+    let itemid = cart.some(function(item){
+        return item.id == id;
     });
-
-    item.number_of_units = 1;
-    cart.push(item);
+    if (itemid){
+        change_numbers_of_items('plus', id)
+    }
+    else{
+        let item = products.find(function(p){
+            return p.id == id;
+        });
+    
+        item.number_of_units = 1;
+        cart.push(item);
+    }
     render_cart_items();
 }
 
