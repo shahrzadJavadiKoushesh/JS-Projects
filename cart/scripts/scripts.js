@@ -39,6 +39,7 @@ function add_to_cart(id){
     let item = products.find(function(p){
         return p.id == id;
     })
+    item.number_of_units = 1;
     cart.push(item);
     render_cart_items();
 }
@@ -51,11 +52,16 @@ function render_cart_items(){
         <div id="p-name">`+cart[i].name+`</div>
         <div id="p-price">`+cart[i].price+`</div>
          <div id="p-unit">
-            <span class="plus"><i class="fa-solid fa-plus"></i></span>
+            <span class="plus" onclick="change_numbers_of_items('plus', `+ cart[i].id +`)"><i class="fa-solid fa-plus"></i></span>
             <span class="unit">0</span>
-            <span class="minus"><i class="fa-solid fa-minus"></i></span>
+            <span class="minus" onclick="change_numbers_of_items('minus', `+ cart[i].id +`)"><i class="fa-solid fa-minus"></i></span>
          </div>
     </li>`
     }
+}
 
+// change number of units
+
+function change_numbers_of_items(action, id){
+    console.log(action + '-' + id);
 }
