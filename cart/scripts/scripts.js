@@ -2,6 +2,8 @@ let product_container = document.querySelector('#products');
 let cart_header = document.querySelector('#cart-header');
 let cart_container = document.querySelector('#cart');
 let cart_items = document.querySelector('#cart-items');
+let total_price_elements = document.querySelector('.total-price');
+let total_item_elements = document.querySelector('.total-items');
 
 function showAllProducts(){
     for(let i = 0; i<products.length; i++){
@@ -51,6 +53,7 @@ function add_to_cart(id){
         cart.push(item);
     }
     render_cart_items();
+    renderTotal();
 }
 
 // render cart items
@@ -86,4 +89,16 @@ function change_numbers_of_items(action, id){
         return item;
     });
     render_cart_items();
+    renderTotal();
+}
+
+// render total
+function renderTotal(){
+    let totalPrice = 0;
+    let totalItems = 0;
+    for (let i = 0; i < cart.length; i++){
+        totalItems += cart[i].number_of_units;
+    }
+
+    total_item_elements.innerHTML = totalItems;
 }
