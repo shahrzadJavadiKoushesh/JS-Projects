@@ -10,7 +10,7 @@ function showAllProducts(){
         <div class="product-instock">تعداد موجود: ` + products[i].instock + `</div>
         <div class="product-data">
             <div class="product-price">`+products[i].price+`</div>
-            <div class="product-addToCart"><i class="fa-solid fa-cart-shopping"></i></div>
+            <div class="product-addToCart" onclick="add_to_cart(`+products[i].id+`)"><i class="fa-solid fa-cart-shopping"></i></div>
         </div>
     </div>`;
     }
@@ -29,3 +29,15 @@ cart_header.addEventListener('click', function(){
     }
 
 })
+
+// cart array
+let cart = [];
+
+// ADD TO CART FUNCTION
+function add_to_cart(id){
+    let item = products.find(function(p){
+        return p.id == id;
+    })
+    cart.push(item);
+    console.log(cart);
+}
