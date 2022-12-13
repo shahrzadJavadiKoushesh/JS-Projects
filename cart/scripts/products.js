@@ -4,7 +4,7 @@ let products = [
         name: "کفش مردانه چرم",
         price: 162000,
         instock: 14,
-        imgSrc: "images/1.jpg"
+        imgSrc: "assets/images/1.jpg"
     },
 
     {
@@ -12,7 +12,7 @@ let products = [
         name: "عروسک اسباب بازی",
         price: 12000,
         instock: 2,
-        imgSrc: "images/2.jpg"
+        imgSrc: "assets/images/2.jpg"
     },
 
     {
@@ -20,7 +20,7 @@ let products = [
         name: "سرویس قابلمه",
         price: 28000,
         instock: 20,
-        imgSrc: "images/3.jpg"
+        imgSrc: "assets/images/3.jpg"
     },
 
     {
@@ -28,7 +28,7 @@ let products = [
         name: "هدست گیمینگ",
         price: 2900000,
         instock: 3,
-        imgSrc: "images/4.jpg"
+        imgSrc: "assets/images/4.jpg"
     },
 
     {
@@ -36,7 +36,7 @@ let products = [
         name: "دستگاه سنگ تراش",
         price: 1340000,
         instock: 7,
-        imgSrc: "images/5.jpg"
+        imgSrc: "assets/images/5.jpg"
     },
 
     {
@@ -44,7 +44,7 @@ let products = [
         name: "مک بوک اپل",
         price: 70000000,
         instock: 5,
-        imgSrc: "images/6.jpg"
+        imgSrc: "assets/images/6.jpg"
     },
 
     {
@@ -52,7 +52,7 @@ let products = [
         name: "دریل + ابزار",
         price: 340000,
         instock: 11,
-        imgSrc: "images/7.jpg"
+        imgSrc: "assets/images/7.jpg"
     },
 
     {
@@ -60,6 +60,6 @@ let products = [
         name: "اسپیکر بلوتوثی",
         price: 1200000,
         instock: 4,
-        imgSrc: "images/8.jpg"
+        imgSrc: "assets/images/8.jpg"
     },
 ];
