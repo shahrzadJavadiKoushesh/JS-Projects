@@ -131,7 +131,7 @@ body{
     height: 400px;
     position: fixed;
     left: 20px;
-    bottom: -10px;
+    bottom: -365px;
     border-radius: 8px;
 }
 
@@ -142,6 +142,10 @@ body{
     font-size: 18px;
     padding: 10px;
     border-radius: 8px 8px 0 0;
+}
+
+#cart #cart-header:hover{
+    cursor: pointer;
 }
 
 #cart #cart-items{

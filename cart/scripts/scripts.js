@@ -1,4 +1,6 @@
 let product_container = document.querySelector('#products');
+let cart_header = document.querySelector('#cart-header');
+let cart_container = document.querySelector('#cart');
 
 function showAllProducts(){
     for(let i = 0; i<products.length; i++){
@@ -16,3 +18,14 @@ function showAllProducts(){
 
 showAllProducts();
 
+let compare = 0;
+cart_header.addEventListener('click', function(){
+    if (compare == 0){
+        cart_container.style.bottom = '-10px';
+        compare = 1;
+    }else{
+        cart_container.style.bottom = '-365px';
+        compare = 0;
+    }
+
+})
