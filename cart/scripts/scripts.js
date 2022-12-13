@@ -93,6 +93,7 @@ function change_numbers_of_items(action, id){
 }
 
 // render total
+
 function renderTotal(){
     let totalPrice = 0;
     let totalItems = 0;
@@ -100,12 +101,12 @@ function renderTotal(){
         totalItems += cart[i].number_of_units;
         totalPrice += cart[i].price * cart[i].number_of_units;
     }
-
     total_item_elements.innerHTML = totalItems;
     total_price_elements.innerHTML = commafy(totalPrice);
 }
 
 // delete item from cart
+
 function deleteItem(id){
     cart = cart.filter(function(item){
         return item.id != id;
@@ -113,6 +114,7 @@ function deleteItem(id){
     render_cart_items();
 }
 
+// function to show nums like this xx.xxx
 function commafy(num) {
     var str = num.toString().split('.');
     if (str[0].length >= 5) {
