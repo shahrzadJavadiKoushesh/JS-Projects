@@ -98,7 +98,10 @@ function renderTotal(){
     let totalItems = 0;
     for (let i = 0; i < cart.length; i++){
         totalItems += cart[i].number_of_units;
+        totalPrice += cart[i].price * cart[i].number_of_units;
     }
 
     total_item_elements.innerHTML = totalItems;
+    total_price_elements.innerHTML = totalPrice;
+
 }
