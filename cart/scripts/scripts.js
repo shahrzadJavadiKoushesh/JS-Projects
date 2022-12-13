@@ -54,7 +54,7 @@ function render_cart_items(){
         <div id="p-price">`+cart[i].price+`</div>
          <div id="p-unit">
             <span class="plus" onclick="change_numbers_of_items('plus', `+ cart[i].id +`)"><i class="fa-solid fa-plus"></i></span>
-            <span class="unit">0</span>
+            <span class="unit">`+cart[i].number_of_units+`</span>
             <span class="minus" onclick="change_numbers_of_items('minus', `+ cart[i].id +`)"><i class="fa-solid fa-minus"></i></span>
          </div>
     </li>`
@@ -67,15 +67,15 @@ function change_numbers_of_items(action, id){
     cart = cart.map(function(item){
         let oldNumberOfUnits = item.number_of_units;
         if(item.id == id){
-            if (action == 'plus'){
+            if (action == 'plus' && oldNumberOfUnits < item.instock){
                 oldNumberOfUnits++;
             }
-            else if(action == 'minus'){
+            else if(action == 'minus' && oldNumberOfUnits > 1){
                 oldNumberOfUnits--;
             }
         }
         item.number_of_units = oldNumberOfUnits;
         return item;
     });
-    console.log(cart);
+    render_cart_items();
 }
