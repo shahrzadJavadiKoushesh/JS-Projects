@@ -1,6 +1,7 @@
 let product_container = document.querySelector('#products');
 let cart_header = document.querySelector('#cart-header');
 let cart_container = document.querySelector('#cart');
+let cart_items = document.querySelector('#cart-items');
 
 function showAllProducts(){
     for(let i = 0; i<products.length; i++){
@@ -39,5 +40,22 @@ function add_to_cart(id){
         return p.id == id;
     })
     cart.push(item);
-    console.log(cart);
+    render_cart_items();
+}
+
+// render cart items
+function render_cart_items(){
+    cart_items.innerHTML = '';
+    for(let i = 0; i < cart.length; i++){
+        cart_items.innerHTML += `<li id="cart-item">
+        <div id="p-name">`+cart[i].name+`</div>
+        <div id="p-price">`+cart[i].price+`</div>
+         <div id="p-unit">
+            <span class="plus"><i class="fa-solid fa-plus"></i></span>
+            <span class="unit">0</span>
+            <span class="minus"><i class="fa-solid fa-minus"></i></span>
+         </div>
+    </li>`
+    }
+
 }
