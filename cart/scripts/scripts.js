@@ -61,7 +61,7 @@ function render_cart_items(){
     cart_items.innerHTML = '';
     for(let i = 0; i < cart.length; i++){
         cart_items.innerHTML += `<li id="cart-item">
-        <div id="p-name">`+cart[i].name+`</div>
+        <div id="p-name" onclick="deleteItem(`+cart[i].id+`)">`+cart[i].name+`</div>
         <div id="p-price">`+cart[i].price+`</div>
          <div id="p-unit">
             <span class="plus" onclick="change_numbers_of_items('plus', `+ cart[i].id +`)"><i class="fa-solid fa-plus"></i></span>
@@ -103,5 +103,12 @@ function renderTotal(){
 
     total_item_elements.innerHTML = totalItems;
     total_price_elements.innerHTML = totalPrice;
+}
 
+// delete item from cart
+function deleteItem(id){
+    cart = cart.filter(function(item){
+        return item.id != id;
+    });
+    render_cart_items();
 }
