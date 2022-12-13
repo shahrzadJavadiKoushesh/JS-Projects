@@ -38,7 +38,8 @@ let cart = [];
 function add_to_cart(id){
     let item = products.find(function(p){
         return p.id == id;
-    })
+    });
+
     item.number_of_units = 1;
     cart.push(item);
     render_cart_items();
@@ -63,5 +64,18 @@ function render_cart_items(){
 // change number of units
 
 function change_numbers_of_items(action, id){
-    console.log(action + '-' + id);
+    cart = cart.map(function(item){
+        let oldNumberOfUnits = item.number_of_units;
+        if(item.id == id){
+            if (action == 'plus'){
+                oldNumberOfUnits++;
+            }
+            else if(action == 'minus'){
+                oldNumberOfUnits--;
+            }
+        }
+        item.number_of_units = oldNumberOfUnits;
+        return item;
+    });
+    console.log(cart);
 }
