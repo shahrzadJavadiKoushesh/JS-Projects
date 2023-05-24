@@ -2,6 +2,10 @@ let todotext = document.querySelector('.todo');
 
 let myform = document.querySelector('#myform');
 
+var modal = document.getElementById("Modal");
+
+var span = document.getElementsByClassName("close")[0];
+
 let numberOfTasks = 0;
 let numberOfDoneTasks = 0;
 myform.addEventListener('submit', function(){
@@ -53,6 +57,19 @@ myform.addEventListener('submit', function(){
         editList.setAttribute('src', 'assets/draw.png');
         editList.setAttribute('title', 'edit');
         editList.setAttribute('alt', 'edit');
+        editList.addEventListener('click', function(){
+            modal.style.display = "block";
+        })
+
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            if (event.target == modal) {
+              modal.style.display = "none";
+            }
+        }
 
 
     }else{
