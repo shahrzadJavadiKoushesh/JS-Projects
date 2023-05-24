@@ -46,6 +46,15 @@ myform.addEventListener('submit', function(){
             numberOfDoneTasks++;
             document.querySelector('#donetasks').innerHTML = numberOfDoneTasks;
         })
+        //edit
+        let editList = document.createElement('img');
+        listitem.appendChild(editList);
+        editList.setAttribute('class', 'editImg')
+        editList.setAttribute('src', 'assets/draw.png');
+        editList.setAttribute('title', 'edit');
+        editList.setAttribute('alt', 'edit');
+
+
     }else{
         alert('You have to type something!');
     }
