@@ -2,9 +2,13 @@ let todotext = document.querySelector('.todo');
 
 let myform = document.querySelector('#myform');
 
+let myform2 = document.querySelector('#myform2');
+
 var modal = document.getElementById("Modal");
 
 var span = document.getElementsByClassName("close")[0];
+
+let edit = document.querySelector('.edit-input');
 
 let numberOfTasks = 0;
 let numberOfDoneTasks = 0;
@@ -61,6 +65,16 @@ myform.addEventListener('submit', function(){
             modal.style.display = "block";
         })
 
+        myform2.addEventListener('submit', function(){
+            if (edit.value != ''){
+                listitem.innerHTML = edit.value;
+                modal.style.display = "none"
+            }
+            else{
+                alert("You have to type something!")
+            }
+        })
+       
         span.onclick = function() {
             modal.style.display = "none";
         }
@@ -76,4 +90,6 @@ myform.addEventListener('submit', function(){
         alert('You have to type something!');
     }
 });
+
+
 
