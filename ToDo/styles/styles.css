@@ -153,9 +153,8 @@ input:focus{
 .modal-content {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    background-color: #fefefe;
-    opacity: 0.95;
+    background-color: #a39d9d;
+    opacity: 0.97;
     margin: 15% auto; 
     padding: 20px;
     border: 1px solid #888;
@@ -163,26 +162,46 @@ input:focus{
     height: 30%;
 }
 
+.modal-usu{
+    display: flex;
+}
+
 .edit-task{
     display: flex;
-    justify-content: center;
+    align-items: flex-end;
     font-size: 20px;
-    margin-bottom: 10px;
+    margin-top: 10px;
+    margin: auto;
 }
 
 #modal-title{
-    height: 80%;
+    display: flex;
+    height: 100%;
     width: 100%;
     opacity: 0.8;
+}
 
+.edit-input{
+    display: flex;
+    float: left;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    margin-top: 70px;
+    border: none;
+    font-size: 23px;
+    opacity: 0.8;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px -8px #000000;
+    box-sizing: border-box
 }
   
   /* The Close Button */
 .close {
     display: flex;
-    align-items: flex-start;
+    /* align-items: flex-start; */
     color: #aaa;
-    float: right;
+    float: left;
     font-size: 28px;
     font-weight: bold;
 }
@@ -191,9 +210,4 @@ input:focus{
     color: red;
     text-decoration: none;
     cursor: pointer;
-}
-
-.edit-input{
-    width: 100%;
-    height: 100%;
 }
