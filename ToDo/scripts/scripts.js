@@ -33,6 +33,39 @@ myform.addEventListener('submit', function(){
             numberOfTasks--;
             document.querySelector('#totaltasks').innerHTML = numberOfTasks;
         });
+        //edit item 
+        let editList = document.createElement('img');
+        listitem.appendChild(editList);
+        editList.setAttribute('class', 'editImg')
+        editList.setAttribute('src', 'assets/draw.png');
+        editList.setAttribute('title', 'edit');
+        editList.setAttribute('alt', 'edit');
+
+        editList.addEventListener('click', function(){
+            modal.style.display = "block";
+            myform2.addEventListener('submit', function(){
+                if (edit.value != ''){
+                    listitem.innerHTML = edit.value;
+                    listitem.appendChild(removeList);
+                    listitem.appendChild(doneList);
+                    listitem.appendChild(editList);
+                    modal.style.display = "none"
+                }
+                else{
+                    alert("You have to type something!")
+                }
+            })
+
+        })
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            if (event.target == modal) {
+              modal.style.display = "none";
+            }
+        }
         // done 
         let doneList = document.createElement('img');
         listitem.appendChild(doneList);
@@ -54,36 +87,6 @@ myform.addEventListener('submit', function(){
             numberOfDoneTasks++;
             document.querySelector('#donetasks').innerHTML = numberOfDoneTasks;
         })
-        //edit
-        let editList = document.createElement('img');
-        listitem.appendChild(editList);
-        editList.setAttribute('class', 'editImg')
-        editList.setAttribute('src', 'assets/draw.png');
-        editList.setAttribute('title', 'edit');
-        editList.setAttribute('alt', 'edit');
-        editList.addEventListener('click', function(){
-            modal.style.display = "block";
-        })
-
-        myform2.addEventListener('submit', function(){
-            if (edit.value != ''){
-                listitem.innerHTML = edit.value;
-                modal.style.display = "none"
-            }
-            else{
-                alert("You have to type something!")
-            }
-        })
-       
-        span.onclick = function() {
-            modal.style.display = "none";
-        }
-
-        window.onclick = function(event) {
-            if (event.target == modal) {
-              modal.style.display = "none";
-            }
-        }
 
 
     }else{
