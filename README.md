@@ -1,7 +1,7 @@
 # JS-Projects
 JS projects in my Javascript learning process 
 
-ToDo -> a simple todo app in which tasks could be added and deleted
+ToDo -> a simple todo app in which tasks could be added, deleted and edited
 
 https://github.com/shahrzadJavadiKoushesh/JS-Projects/assets/77495573/fb41b554-8c33-438e-996b-d3b52dbc5d09
 
